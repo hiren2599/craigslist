@@ -5,56 +5,24 @@
     <h2 style="text-align:center">{{ search | title }}</h2>
 
     <div class="row">
+    {% for post in final_posting %}
     <div class="col s4">
-      <div class="card">
+      <div class="card small">
         <div class="card-image">
-        <a>
-          <img src="images/sample-1.jpg">
+        <a href="{{post.1}}">
+          <img src="{{ post.3 }}" alt="craiglist image">
         </a>
         </div>
         <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
+          <p>{{ post.0 }}
           </p>
         </div>
         <div class="card-action">
-          <a href="/">This is a link</a>
+          <a href="{{post.1}}">view listing: Price {{post.2}}</a>
         </div>
       </div>
     </div>
 
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-        <a>
-          <img src="images/sample-1.jpg">
-        </a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          </p>
-        </div>
-        <div class="card-action">
-          <a href="/">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s4">
-      <div class="card">
-        <div class="card-image">
-        <a>
-          <img src="images/sample-1.jpg">
-        </a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          </p>
-        </div>
-        <div class="card-action">
-          <a href="/">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    {% endfor %}
+    
 {% endblock content %}
