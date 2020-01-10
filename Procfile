@@ -1,1 +1,1 @@
-web: gunicorn hlp2599_craigslist.wsgi
+web: gunicorn craiglist.wsgi
