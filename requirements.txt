@@ -6,10 +6,13 @@ chardet==3.0.4
 cycler==0.10.0
 decorator==4.4.0
 Django==2.2.4
+gunicorn==21.2.0
 idna==2.8
 joblib==0.13.2
 Markdown==3.1.1
 networkx==2.3
+packaging==23.2
+Pillow==10.1.0
 pyparsing==2.4.2
 pytz==2019.2
 requests==2.22.0
