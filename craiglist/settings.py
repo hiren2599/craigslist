@@ -26,7 +26,7 @@ SECRET_KEY = 'vr!dgc3)1qlqioi82n9k!i6i46b-ok^x(yyr2k2$vqh8n#ne(4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-ce51.up.railway.app']
+ALLOWED_HOSTS = ['craigslist-hiren2599.up.railway.app']
 
 
 # Application definition
